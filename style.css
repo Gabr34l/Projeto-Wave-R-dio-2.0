@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black !important;
+  overflow-x: hidden;
+}
+.radio {
+  justify-content: center;
+  display: flex;
+  padding-top: 50px;
+}
+.audio {
+  width: 50vw;
+}
+h1 {
+  font-size: 50px;
+  font-family: system-ui;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  padding-top: 100px;
+}
+h2 {
+  font-size: 50px;
+  font-family: system-ui;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+}
+p {
+  font-size: 25px;
+  font-family: system-ui;
+  color:#fff;
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
+}
+/* .container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+   
+} */
+header {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+ul li {
+  margin: 0 30px;
+}
+ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.2;
+  display: block;
+  position: relative;
+  padding: 5px;
+  font-family: system-ui;
+}
+
+ul:hover li a {
+  opacity: 0.3;
+}
+ul li a:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(219, 219, 219, 0.548);
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 50px;
+}
+
+ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.2s;
+}
+
+img {
+  height: 150px;
+}
+@media screen and (min-width: 400px) {
+  .search-box:hover .search-box-input {
+    width: 200px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.top-images {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 400px;
+  height: 450px;
+  margin: 100px;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item {
+  height: 50vw; /* Define a altura igual à largura da viewport */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Garante que a imagem cubra completamente o espaço do carrossel */
+  height: 100%; /* Define a altura da imagem igual à altura do item do carrossel */
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Adiciona espaço entre os elementos flex */
+}
+
+ul {
+  list-style: none;
+  padding: 0; /* Remove o padding padrão do ul */
+  margin: 0; /* Remove a margem padrão do ul */
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  flex: 1; /* Permite que as colunas se ajustem dentro do flex container */
+  padding: 30px 15px;
+  min-width: 200px; /* Define uma largura mínima para evitar colapsos em telas menores */
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 45%; /* Ajusta a largura para 45% para permitir espaçamento */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  /*PAGINA MUSICAS*/
+}
+body {
+  background-color: black;
+}
+.musicas-top {
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+.musicas {
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/*PAGINA NOTICIAS*/
+
+.noticia {
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+
+.image-container {
+  max-width: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.image-container img {
+  width: 450px;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+.descricao {
+  color: white;
+}
+.not {
+  border-radius: 25px;
+  padding: 15px;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+}

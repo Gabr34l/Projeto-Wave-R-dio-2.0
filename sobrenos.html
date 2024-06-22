@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waveradio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: black;
+        }
+        .top {
+            background-color: rgba(128, 128, 128, 0.411);
+            border-radius: 25px;
+            padding: 15px;
+            text-align: center;
+            max-width: 800px; /* Defina a largura máxima */
+            margin: 20px auto; /* Centraliza a div horizontalmente */
+        }
+        h1, h2, h5, p {
+            color: white;
+            text-align: center;
+        }
+        .card {
+            width: 30rem;
+            margin: 0 auto;
+            background-color: grey;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
+        .card-body1 {
+            text-align: center;
+            padding: 15px;
+        }
+        .duas1, .duas2, .single {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 900px) {
+            .duas1, .duas2, .single {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Sobre nós</h1>
+        <p>Wave Rádio, uma web rádio de Uberlândia que foi desenvolvida visando promover o entretenimento, comunicação e informação fortalecendo a igualdade cultural e social da comunidade através da música. Com uma programação completa contendo programas musicais, entrevistas e notícias.</p>
+    </div>
+    <h2>Integrantes</h2>
+    <div class="duas1">
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/alex2.jpg" class="card-img-top" alt="Alex ">
+            </div>
+            <div class="card-body1">
+                <h5 class="card-title">Alex Furtado</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/luiz.jpg" class="card-img-top" alt="Luiz">
+            </div>
+            <div class="card-body1">
+                <h5 class="card-title">Luiz</h5>
+            </div>
+        </div>
+    </div>
+    <div class="duas2">
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/gabs.jpg" class="card-img-top" alt="Gabs">
+            </div>
+            <div class="card-body1">
+                <h5 class="card-title">Gabriel</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/ana2.jpg" class="card-img-top" alt="Ana">
+            </div>
+            <div class="card-body1">
+                <h5 class="card-title">Ana</h5>
+            </div>
+        </div>
+    </div>
+    <div class="single">
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/sabrina.jpg" class="card-img-top" alt="Sabrina">
+            </div>
+            <div class="card-body1">
+                <h5 class="card-title">Sabrina</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
